@@ -345,6 +345,12 @@ npm test
 
 ---
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+---
+
 ## License
 
 MIT © [Phoenix AI Hub](https://github.com/phoenix-assistant)

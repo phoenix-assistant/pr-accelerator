@@ -1,28 +1,32 @@
----
-name: Pull Request
-about: Submit a change to pr-accelerator
----
-
 ## Summary
 
-<!-- What does this PR change? -->
+Brief description of what this PR does and why.
+
+Closes #<!-- issue number -->
 
 ## Type of Change
 
-- [ ] Bug fix
-- [ ] New feature
-- [ ] Breaking change
-- [ ] Documentation update
-- [ ] Performance improvement
+- [ ] 🐛 Bug fix
+- [ ] ✨ New feature
+- [ ] ♻️ Refactor
+- [ ] 📚 Documentation
+- [ ] 🧪 Tests
+- [ ] 🔧 Chore / dependency update
+
+## Changes
+
+- ...
+- ...
 
 ## Testing
 
-- [ ] Tests pass (`npm test`)
-- [ ] New tests added for new functionality
-- [ ] Manually tested with `pr-accelerator analyze` on a real repo
+- [ ] `npm test` passes locally
+- [ ] Added/updated tests for new behavior
+- [ ] Manually tested with: `...`
 
 ## Checklist
 
-- [ ] `npm run typecheck` passes
-- [ ] `npm run build` succeeds
-- [ ] Documentation updated if needed
+- [ ] Code follows project style guidelines
+- [ ] Self-reviewed the diff
+- [ ] No debug logs or console.log left in
+- [ ] Updated README/docs if behavior changed

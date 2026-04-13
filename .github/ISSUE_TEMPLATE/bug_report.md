@@ -1,30 +1,35 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: '[bug] '
+name: Bug Report
+about: Report a bug or unexpected behavior
+title: '[BUG] '
 labels: bug
 assignees: ''
 ---
 
-**Describe the bug**
+## Describe the Bug
+
 A clear and concise description of what the bug is.
 
-**Command run**
-```
-pr-accelerator <command> <args>
-```
+## Steps to Reproduce
 
-**Expected behavior**
+1. Run `...`
+2. See error
+
+## Expected Behavior
+
 What you expected to happen.
 
-**Actual behavior**
-What actually happened (include full output/errors).
+## Actual Behavior
 
-**Environment**
+What actually happened. Include the full error output if applicable.
+
+## Environment
+
 - OS: [e.g. macOS 14, Ubuntu 22.04]
-- Node.js: [e.g. 20.x]
-- pr-accelerator version: [e.g. 0.1.0]
-- gh CLI version: [e.g. 2.x]
+- Node.js: [e.g. 20.11.0] (`node --version`)
+- Tool version: (`npx <tool> --version`)
+- Shell: [e.g. zsh, bash]
 
-**Additional context**
-Add any other context about the problem here.
+## Additional Context
+
+Any other context, screenshots, or logs.

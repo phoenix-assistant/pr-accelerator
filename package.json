@@ -56,5 +56,6 @@
   },
   "engines": {
     "node": ">=18"
-  }
+  },
+  "homepage": "https://github.com/phoenix-assistant/pr-accelerator#readme"
 }

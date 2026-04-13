@@ -1,19 +1,27 @@
 ---
-name: Feature request
-about: Suggest an idea for pr-accelerator
-title: '[feat] '
+name: Feature Request
+about: Suggest a new feature or enhancement
+title: '[FEAT] '
 labels: enhancement
 assignees: ''
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear description of what the problem is.
+## Problem Statement
 
-**Describe the solution you'd like**
-A clear description of what you want to happen.
+What problem does this feature solve? What are you trying to do that's currently difficult?
 
-**Describe alternatives you've considered**
-Any alternative solutions or features you've considered.
+## Proposed Solution
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+A clear description of the feature you'd like.
+
+## Alternatives Considered
+
+Any alternative approaches or workarounds you've considered.
+
+## Use Case / Example
+
+Show how this would look in practice (CLI usage, API, config, etc.).
+
+## Additional Context
+
+Any references, related issues, or additional context.
