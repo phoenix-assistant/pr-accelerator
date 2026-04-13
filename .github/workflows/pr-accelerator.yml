@@ -1,0 +1,49 @@
+name: PR Accelerator
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  summarize:
+    name: Semantic Summary
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Post semantic summary
+        run: npx @phoenixaihub/pr-accelerator ci summarize
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_PR_NUMBER: ${{ github.event.pull_request.number }}
+
+  auto-assign:
+    name: Auto-assign Reviewers
+    runs-on: ubuntu-latest
+    # Only run if autoAssign is enabled in .pr-accelerator.yml
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Auto-assign reviewers
+        run: npx @phoenixaihub/pr-accelerator ci auto-assign
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_PR_NUMBER: ${{ github.event.pull_request.number }}
